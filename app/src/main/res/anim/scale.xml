@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:zAdjustment="top">
+
+    <scale android:fromXScale="0" android:toXScale="1"
+        android:fromYScale="0" android:toYScale="1"
+        android:pivotX="50%"  android:pivotY="50%"
+        android:duration="500"/>
+
+    <!--
+        fromXScale： 动画起始时 X轴方向的缩放，其中0.0表示缩放到没有
+        1.0 表示正常 无伸缩，值小于 1.0 表示缩小，大于1.0 表示放大
+       fromXScale： 动画开始时Y方向的缩放
+       toXScale ：动画结束时 x轴方向的缩放尺寸
+       toYScale ： 动画结束 y方向上的缩放尺寸
+       pivotX ： 动画在 x 轴方向缩放的中心点， 0% ~ 100 %，50% 表示 相对于父控件的中心位置
+       pivotY ： 动画在 Y 轴方向上的中心点
+
+       interpolator ：指定一个动画的插入器， interpolator 定义一个动画的变化率
+       使得基本的动画（alpha scale translate rolate）可以加速 减速 重复等
+       linear_interpolator : 动画匀速的速率改变
+       cycle_interpolator : 动画循环播放特定的次数，速率改变沿着正弦速率改变
+       accelerate_decelerate_interpolator : 在开始或结束 比较慢，在中间比较快
+       accelerate_interpolator ： 在开始的时候比较慢，然后加速
+       decelerate_interpolator : 在开始的地方比较慢，然后减速
+
+       zAdjustment: 定义动画 Z 轴方向的位置：
+             normal  保持不变， top : 保持在最上层   buttom  : 在下面
+       repeatCount :   动画的重复次数
+       repeatMode : 定义重复的模式：
+                      restart 表示重新开始  reverse ： 先倒退再执行 ，倒退也算一次
+       startOffset ： 动画之间的时间间隔
+    -->
+</set>
